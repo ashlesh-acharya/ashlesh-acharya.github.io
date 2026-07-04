@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery &amp; Art — Ashlesh S Acharya</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Caveat:wght@500;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="layout">
+
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">Ashlesh S Acharya</div>
+    <span class="brand-sub">on the way, always</span>
+    <button class="menu-toggle" id="menuToggle">Menu</button>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume</a>
+      <a href="acharya.html">Acharya on the way</a>
+      <a href="gallery.html" class="active">Gallery &amp; Art</a>
+    </nav>
+    <div class="side-contact">
+      <a href="mailto:ashleshsacharya@gmail.com">ashleshsacharya@gmail.com</a>
+      <a href="https://www.linkedin.com/in/ashlesh-s-acharya" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.instagram.com/__oldschool_boy" target="_blank" rel="noopener">@__oldschool_boy</a>
+      <a href="https://www.instagram.com/acharyaontheway" target="_blank" rel="noopener">@acharyaontheway</a>
+    </div>
+  </aside>
+
+  <main class="content">
+    <div class="wrap">
+
+      <section style="padding-top:70px;">
+        <span class="track-num">SIDE B — TRACK 02</span>
+        <h2>Gallery &amp; Art</h2>
+        <p>Pencil sketches, photography, and whatever else gets made along the way. 15 slots below, ready to be filled in.</p>
+        <div class="draft-note">
+          how to fill a slot: in your GitHub repo, upload an image into an <strong>/images/</strong> folder (create it if it doesn't exist), then open this file (gallery.html) and edit, e.g. slot 1: change
+          <br>&lt;div class="gallery-slot"&gt;&lt;span class="slot-num"&gt;01&lt;/span&gt;&lt;/div&gt;
+          <br>to
+          <br>&lt;div class="gallery-slot"&gt;&lt;img src="images/your-file.jpg" alt="describe it"&gt;&lt;/div&gt;
+        </div>
+      </section>
+
+      <section class="reveal">
+        <div class="gallery-grid">
+          <div class="gallery-slot"><span class="slot-num">01</span></div>
+          <div class="gallery-slot"><span class="slot-num">02</span></div>
+          <div class="gallery-slot"><span class="slot-num">03</span></div>
+          <div class="gallery-slot"><span class="slot-num">04</span></div>
+          <div class="gallery-slot"><span class="slot-num">05</span></div>
+          <div class="gallery-slot"><span class="slot-num">06</span></div>
+          <div class="gallery-slot"><span class="slot-num">07</span></div>
+          <div class="gallery-slot"><span class="slot-num">08</span></div>
+          <div class="gallery-slot"><span class="slot-num">09</span></div>
+          <div class="gallery-slot"><span class="slot-num">10</span></div>
+          <div class="gallery-slot"><span class="slot-num">11</span></div>
+          <div class="gallery-slot"><span class="slot-num">12</span></div>
+          <div class="gallery-slot"><span class="slot-num">13</span></div>
+          <div class="gallery-slot"><span class="slot-num">14</span></div>
+          <div class="gallery-slot"><span class="slot-num">15</span></div>
+        </div>
+      </section>
+
+      <footer>still on the way, always.</footer>
+
+    </div>
+  </main>
+</div>
+
+<script>
+  const els = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries)=>{ entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); } }); }, {threshold:0.1});
+  els.forEach(el=>io.observe(el));
+  const toggle = document.getElementById('menuToggle');
+  const sidebar = document.getElementById('sidebar');
+  if(toggle){ toggle.addEventListener('click', ()=> sidebar.classList.toggle('open')); }
+</script>
+</body>
+</html>

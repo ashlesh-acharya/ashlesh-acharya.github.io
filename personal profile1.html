@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ashlesh S Acharya — Between the practical and the profound</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Caveat:wght@500;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .hero{min-height:82vh; display:flex; flex-direction:column; justify-content:center; padding-top:40px; padding-bottom:40px;}
+  .hero .tape{width:60px; height:60px; margin-bottom:26px; opacity:0.9;}
+  .hero h1{font-size:clamp(2.2rem, 5.5vw, 3.8rem); line-height:1.1; color:var(--cream); max-width:11ch; font-style:italic;}
+  .hero h1 em{font-style:italic; color:var(--caramel);}
+  .hero .name{font-family:'Work Sans'; font-size:0.9rem; letter-spacing:0.26em; text-transform:uppercase; color:var(--cream-dim); margin-top:22px;}
+  .hero .intro{margin-top:22px; max-width:56ch; color:var(--cream-dim); font-size:1.02rem;}
+  .cards{display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:18px; margin-top:26px;}
+  .nav-card{display:block; border:1px solid rgba(201,138,75,0.22); border-radius:4px; padding:22px 22px; background:var(--bg-card); border-bottom:1px solid rgba(201,138,75,0.22);}
+  .nav-card:hover{border-color:var(--caramel);}
+  .nav-card .t{font-family:'Playfair Display'; font-style:italic; color:var(--cream); font-size:1.15rem; display:block; margin-bottom:6px;}
+  .nav-card .d{color:var(--cream-dim); font-size:0.85rem;}
+</style>
+</head>
+<body>
+<div class="layout">
+
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">Ashlesh S Acharya</div>
+    <span class="brand-sub">on the way, always</span>
+    <button class="menu-toggle" id="menuToggle">Menu</button>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="resume.html">Resume</a>
+      <a href="acharya.html">Acharya on the way</a>
+      <a href="gallery.html">Gallery &amp; Art</a>
+    </nav>
+    <div class="side-contact">
+      <a href="mailto:ashleshsacharya@gmail.com">ashleshsacharya@gmail.com</a>
+      <a href="https://www.linkedin.com/in/ashlesh-s-acharya" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.instagram.com/__oldschool_boy" target="_blank" rel="noopener">@__oldschool_boy</a>
+      <a href="https://www.instagram.com/acharyaontheway" target="_blank" rel="noopener">@acharyaontheway</a>
+    </div>
+  </aside>
+
+  <main class="content">
+    <div class="wrap">
+
+      <section class="hero">
+        <svg class="tape" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2" y="14" width="60" height="38" rx="3" stroke="#c98a4b" stroke-width="1.6"/>
+          <circle cx="20" cy="33" r="9" stroke="#c98a4b" stroke-width="1.6"/>
+          <circle cx="44" cy="33" r="9" stroke="#c98a4b" stroke-width="1.6"/>
+          <circle cx="20" cy="33" r="2.4" fill="#c98a4b"/>
+          <circle cx="44" cy="33" r="2.4" fill="#c98a4b"/>
+          <path d="M14 47 h36" stroke="#c98a4b" stroke-width="1.2" opacity="0.6"/>
+        </svg>
+        <span class="eyebrow">a profile, not a resume</span>
+        <h1>Between the <em>practical</em> and the <em>profound</em>.</h1>
+        <div class="name">Ashlesh S Acharya</div>
+        <p class="intro" id="hero-intro">I'm someone who refuses to be boxed into one lane. By day I navigate the world of technology and business, learning the language of systems and solutions. By instinct, I'm drawn to older questions — about meaning, culture, and what it means to live well. I sing, I cycle, I act, I write — not because I've mastered any of it, but because I'm still curious. This is a profile of someone mid-journey, not someone who's arrived.</p>
+      </section>
+
+      <section class="reveal" id="about">
+        <span class="track-num">SIDE A — TRACK 01</span>
+        <h2>On being a jack of all trades</h2>
+        <span class="lede">"Jack of all trades, master of none" — I used to believe that too.</span>
+        <p>Until I noticed something. I could never fully commit to just one passion — the moment I picked one thing to specialize in, ten other interests started pulling at me, and I was never quite satisfied. But the moment I stopped trying to choose, and just <strong>moved between all of them</strong> — a day for cycling, a night for writing, a morning for voice practice, an evening for singing — that rotation became the thing that actually satisfied me.</p>
+        <p>Not mastery of one. Immersion in many, in parallel. So maybe I'll land a role as a Business Analyst. But I'll come home and still write, still sing, still train my voice, still create. Doing it all, side by side, isn't a compromise — it's what my soul actually asked for. Not a lane. A rhythm.</p>
+        <p>I'm also, underneath all of it, a fairly emotional person who can't help thinking about things philosophically — and at the same time, a practical one who likes getting things done. Both are true. Neither cancels the other out.</p>
+      </section>
+
+      <section class="reveal" id="explore">
+        <span class="track-num">FIND YOUR WAY AROUND</span>
+        <h2>Explore</h2>
+        <div class="cards">
+          <a class="nav-card" href="resume.html">
+            <span class="t">Resume</span>
+            <span class="d">The practical half — experience, skills, education, and a downloadable CV.</span>
+          </a>
+          <a class="nav-card" href="acharya.html">
+            <span class="t">Acharya on the way</span>
+            <span class="d">The philosophical half — questions, culture, and the walk itself.</span>
+          </a>
+          <a class="nav-card" href="gallery.html">
+            <span class="t">Gallery &amp; Art</span>
+            <span class="d">Sketches, photos, and things made by hand.</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="reveal" id="contact">
+        <span class="track-num">B-SIDE OUTRO</span>
+        <h2>Get in touch</h2>
+        <ul class="contact-list">
+          <li><span class="k">email</span><span class="v"><a href="mailto:ashleshsacharya@gmail.com">ashleshsacharya@gmail.com</a></span></li>
+          <li><span class="k">linkedin</span><span class="v"><a href="https://www.linkedin.com/in/ashlesh-s-acharya" target="_blank" rel="noopener">ashlesh-s-acharya</a></span></li>
+          <li><span class="k">instagram</span><span class="v"><a href="https://www.instagram.com/__oldschool_boy" target="_blank" rel="noopener">@__oldschool_boy</a></span></li>
+          <li><span class="k">acharya on the way</span><span class="v"><a href="https://www.instagram.com/acharyaontheway" target="_blank" rel="noopener">@acharyaontheway</a></span></li>
+        </ul>
+      </section>
+
+      <footer>still on the way, always.</footer>
+
+    </div>
+  </main>
+</div>
+
+<script>
+  const els = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries)=>{ entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); } }); }, {threshold:0.12});
+  els.forEach(el=>io.observe(el));
+  const toggle = document.getElementById('menuToggle');
+  const sidebar = document.getElementById('sidebar');
+  if(toggle){ toggle.addEventListener('click', ()=> sidebar.classList.toggle('open')); }
+</script>
+</body>
+</html>
